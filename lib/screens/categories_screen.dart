@@ -9,8 +9,17 @@ class CategoriesScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Tour guide'),
       ),
-      body: Container(
-        
+      body: GridView(
+        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 200,
+          childAspectRatio: 7 / 8,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+        ),
+        children: [
+          
+        ],
+
       ),
     );
   }
